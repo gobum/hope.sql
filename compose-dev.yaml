@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  dev:
+    build: .
+    image: hope.sql
+    volumes:
+      - ~/.ssh:/root/.ssh
+      - .:/workspaces:cached
+      - .:/com.docker.devenvironments.code
+      #
+ 
